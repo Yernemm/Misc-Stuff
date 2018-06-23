@@ -1,0 +1,2 @@
+node combinerScript.js
+pause
