@@ -1,4 +1,4 @@
-var input = ""
+var input = "122 126 129 128 131 133 114 127 133 107 81 101 100 103 98 95 102"
 var alpha = "abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 var alphaWithoutGB = " acdefhijklmnopqrstuvwxyzACDEFHIJKLMNOPQRSTUVWXYZ"
 var ascii = ' !"#$%&\'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]^_`abcdefghijklmnopqrstuvwxyz{|}~';
