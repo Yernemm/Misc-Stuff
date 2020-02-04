@@ -1,7 +1,7 @@
 var http = require('https');
 var fs = require('fs');
 
-var j = 1;
+var j = 680000;
 download(j);
 function download(i){
 var file = fs.createWriteStream("emotes/"+i + ".png");
