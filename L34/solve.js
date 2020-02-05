@@ -6,26 +6,12 @@ const alphabet = 'abcdefghijklmnopqrstuvwxyz'.split('')
 // ma mb sa sb sa ma sb mb mb mb ma sa sb
 //on your way across the sea if youre lost but can see the north star you shall find will guide you from your bind
 
-const readline = require('readline');
-
-const rl = readline.createInterface({
-  input: process.stdin,
-  output: process.stdout
-});
-
-rl.question('Search term: ', (answer) => {
-    run(answer);
-  rl.close();
-});
-
-
-
 function run(searchTerm){
     for(let i = 0; i < 3600; i++){
         let t = sToVars(i)
         let res = offset(value, t.ma, t.mb, t.sa, t.sb);
         if(res.includes(searchTerm))
-        console.log(res);
+        console.log(i + " " + res);
     }
 }
 
@@ -68,3 +54,15 @@ function sToVars(time){
         mb: mins[1] * 1
     }
 }
+
+const readline = require('readline');
+
+const rl = readline.createInterface({
+  input: process.stdin,
+  output: process.stdout
+});
+
+rl.question('Search term: ', (answer) => {
+    run(answer);
+  rl.close();
+});
